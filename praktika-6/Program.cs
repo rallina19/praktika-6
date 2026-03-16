@@ -16,6 +16,11 @@ namespace praktika_6
 
        static void Divide(int dividend, int divisor, out int quotient, out int remainder) //1.2
        {
+        if (divisor == 0)
+            {
+                Console.WriteLine("Ошибка! на 0 делить нельзя!");
+                Console.WriteLine("Частное: -, остаток: -");
+            }
            quotient = dividend / divisor;
            remainder = dividend % divisor;
            Console.WriteLine($"Частное: {quotient}, остаток: {remainder}");
